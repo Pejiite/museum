@@ -1,5 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://static.nationalgeographic.fr/files/styles/image_1900/public/01-sistine-chapel-opener.adapt_.1900.1.jpg);">
+  <div class="container">
+    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+
+
 <h1>Arts</h1>
 
 <table>
@@ -19,6 +28,7 @@
   <tbody>
     <% @arts.each do |art| %>
       <tr>
+
         <td><%= art.author %></td>
         <td><%= art.description %></td>
         <td><%= art.title %></td>
